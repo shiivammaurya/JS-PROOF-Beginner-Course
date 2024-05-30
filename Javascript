@@ -5,13 +5,13 @@ const myAssets = [];
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
 function mintNFT(_fullName, _gender, _items, _additionalItem) {
-    const digitalAsset = {
+    const myAsset = {
         fullName: _fullName,
         gender: _gender,
         items: _items,
         additionalItem: _additionalItem
     };
-    myAssets.push(digitalAsset);
+    myAssets.push(myAsset);
     console.log("Customer: " + _fullName);
 }
 
