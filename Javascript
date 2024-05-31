@@ -4,7 +4,7 @@ const myAssets = [];
 // This function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT(_fullName, _gender, _items, _additionalItem) {
+function myNFT(_fullName, _gender, _items, _additionalItem) {
     const myAsset = {
         fullName: _fullName,
         gender: _gender,
@@ -12,12 +12,12 @@ function mintNFT(_fullName, _gender, _items, _additionalItem) {
         additionalItem: _additionalItem
     };
     myAssets.push(myAsset);
-    console.log("Minted: " + _fullName);
+    console.log("NFT: " + _fullName);
 }
 
 // Let's create a "loop" that will pass through all the elements of an "array" of my assets
 // and we try to print their metadata by using console.log()
-function listNFTs() {
+function totalNFTs() {
     for (let i = 0; i < myAssets.length; i++) {
         console.log("\nS.No: \t\t " + (i + 1));
         console.log("Name: \t\t " + myAssets[i].fullName);
@@ -33,10 +33,10 @@ function getTotalSupply() {
 }
 
 // Let's start calling our function
-mintNFT("Shivam", "Male", "Watch", "Gemotry Box");
-mintNFT("Kunal", "Male", "Earphone", "Phone cover");
-mintNFT("Anu", "Female", "Lipstick", "Gold Bracelet");
-mintNFT("Rahul", "Male", "Calculator", "Battery");
-mintNFT("Jagvir", "Male", "Tie", "Shoes");
-listNFTs();
+myNFT("Shivam", "Male", "Watch", "Gemotry Box");
+myNFT("Kunal", "Male", "Earphone", "Phone cover");
+myNFT("Anu", "Female", "Lipstick", "Gold Bracelet");
+myNFT("Rahul", "Male", "Calculator", "Battery");
+myNFT("Jagvir", "Male", "Tie", "Shoes");
+totalNFTs();
 getTotalSupply();
