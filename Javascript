@@ -12,7 +12,7 @@ function mintNFT(_fullName, _gender, _items, _additionalItem) {
         additionalItem: _additionalItem
     };
     myAssets.push(myAsset);
-    console.log("Customer: " + _fullName);
+    console.log("Minted: " + _fullName);
 }
 
 // Let's create a "loop" that will pass through all the elements of an "array" of my assets
@@ -27,9 +27,9 @@ function listNFTs() {
     }
 }
 
-// Here we are to print the total number of my assets
+// Here we are to print the total number of NFT
 function getTotalSupply() {
-    console.log("\nTotal Assets: " + myAssets.length);
+    console.log("\nTotal No of NFT: " + myAssets.length);
 }
 
 // Let's start calling our function
